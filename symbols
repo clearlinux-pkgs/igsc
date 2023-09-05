@@ -24,6 +24,7 @@ libigsc.so.0:igsc_ecc_config_set
 libigsc.so.0:igsc_fw_version_compare
 libigsc.so.0:igsc_fwdata_version_compare
 libigsc.so.0:igsc_get_last_firmware_status
+libigsc.so.0:igsc_get_log_level
 libigsc.so.0:igsc_gfsp_count_tiles
 libigsc.so.0:igsc_gfsp_get_health_indicator
 libigsc.so.0:igsc_gfsp_memory_errors
@@ -67,4 +68,5 @@ libigsc.so.0:igsc_image_oprom_version
 libigsc.so.0:igsc_memory_ppr_devices
 libigsc.so.0:igsc_memory_ppr_status
 libigsc.so.0:igsc_oprom_version_compare
+libigsc.so.0:igsc_set_log_level
 libigsc.so.0:igsc_translate_firmware_status
