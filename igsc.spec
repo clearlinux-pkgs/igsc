@@ -4,10 +4,10 @@
 # Using build pattern: cmake
 #
 Name     : igsc
-Version  : 0.8.11
-Release  : 9
-URL      : https://github.com/intel/igsc/archive/V0.8.11/igsc-0.8.11.tar.gz
-Source0  : https://github.com/intel/igsc/archive/V0.8.11/igsc-0.8.11.tar.gz
+Version  : 0.8.13
+Release  : 10
+URL      : https://github.com/intel/igsc/archive/V0.8.13/igsc-0.8.13.tar.gz
+Source0  : https://github.com/intel/igsc/archive/V0.8.13/igsc-0.8.13.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -65,15 +65,15 @@ license components for the igsc package.
 
 
 %prep
-%setup -q -n igsc-0.8.11
-cd %{_builddir}/igsc-0.8.11
+%setup -q -n igsc-0.8.13
+cd %{_builddir}/igsc-0.8.13
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1693926826
+export SOURCE_DATE_EPOCH=1694618287
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -106,7 +106,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1693926826
+export SOURCE_DATE_EPOCH=1694618287
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/igsc
 cp %{_builddir}/igsc-%{version}/LICENSE.txt %{buildroot}/usr/share/package-licenses/igsc/a8f3e29d5eab4420318de979754f5637d4bf2c3f || :
@@ -137,9 +137,9 @@ popd
 
 %files lib
 %defattr(-,root,root,-)
-/V3/usr/lib64/libigsc.so.0.8.11
+/V3/usr/lib64/libigsc.so.0.8.13
 /usr/lib64/libigsc.so.0
-/usr/lib64/libigsc.so.0.8.11
+/usr/lib64/libigsc.so.0.8.13
 
 %files license
 %defattr(0644,root,root,0755)
