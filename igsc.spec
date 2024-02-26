@@ -7,7 +7,7 @@
 #
 Name     : igsc
 Version  : 0.8.16
-Release  : 14
+Release  : 15
 URL      : https://github.com/intel/igsc/archive/V0.8.16/igsc-0.8.16.tar.gz
 Source0  : https://github.com/intel/igsc/archive/V0.8.16/igsc-0.8.16.tar.gz
 Summary  : No detailed summary available
