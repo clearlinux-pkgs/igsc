@@ -1,4 +1,5 @@
 libigsc.so.0:igsc_device_close
+libigsc.so.0:igsc_device_commit_arb_svn
 libigsc.so.0:igsc_device_fw_update
 libigsc.so.0:igsc_device_fw_update_ex
 libigsc.so.0:igsc_device_fw_version
@@ -6,6 +7,7 @@ libigsc.so.0:igsc_device_fwdata_image_update
 libigsc.so.0:igsc_device_fwdata_update
 libigsc.so.0:igsc_device_fwdata_version
 libigsc.so.0:igsc_device_get_device_info
+libigsc.so.0:igsc_device_get_min_allowed_arb_svn
 libigsc.so.0:igsc_device_hw_config
 libigsc.so.0:igsc_device_ifr_bin_version
 libigsc.so.0:igsc_device_init_by_device
@@ -19,6 +21,7 @@ libigsc.so.0:igsc_device_oprom_version
 libigsc.so.0:igsc_device_psc_version
 libigsc.so.0:igsc_device_subsystem_ids
 libigsc.so.0:igsc_device_update_device_info
+libigsc.so.0:igsc_device_update_late_binding_config
 libigsc.so.0:igsc_ecc_config_get
 libigsc.so.0:igsc_ecc_config_set
 libigsc.so.0:igsc_fw_version_compare
@@ -27,6 +30,7 @@ libigsc.so.0:igsc_get_last_firmware_status
 libigsc.so.0:igsc_get_log_level
 libigsc.so.0:igsc_gfsp_count_tiles
 libigsc.so.0:igsc_gfsp_get_health_indicator
+libigsc.so.0:igsc_gfsp_heci_cmd
 libigsc.so.0:igsc_gfsp_memory_errors
 libigsc.so.0:igsc_hw_config_compatible
 libigsc.so.0:igsc_hw_config_to_string
