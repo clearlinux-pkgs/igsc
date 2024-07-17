@@ -6,10 +6,10 @@
 # autospec commit: b858a2a
 #
 Name     : igsc
-Version  : 0.8.18
-Release  : 18
-URL      : https://github.com/intel/igsc/archive/V0.8.18/igsc-0.8.18.tar.gz
-Source0  : https://github.com/intel/igsc/archive/V0.8.18/igsc-0.8.18.tar.gz
+Version  : 0.8.19
+Release  : 19
+URL      : https://github.com/intel/igsc/archive/V0.8.19/igsc-0.8.19.tar.gz
+Source0  : https://github.com/intel/igsc/archive/V0.8.19/igsc-0.8.19.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -67,10 +67,10 @@ license components for the igsc package.
 
 
 %prep
-%setup -q -n igsc-0.8.18
-cd %{_builddir}/igsc-0.8.18
+%setup -q -n igsc-0.8.19
+cd %{_builddir}/igsc-0.8.19
 pushd ..
-cp -a igsc-0.8.18 buildavx2
+cp -a igsc-0.8.19 buildavx2
 popd
 
 %build
@@ -78,7 +78,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1721140344
+export SOURCE_DATE_EPOCH=1721240758
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
@@ -141,7 +141,7 @@ FFLAGS="$CLEAR_INTERMEDIATE_FFLAGS"
 FCFLAGS="$CLEAR_INTERMEDIATE_FCFLAGS"
 ASFLAGS="$CLEAR_INTERMEDIATE_ASFLAGS"
 LDFLAGS="$CLEAR_INTERMEDIATE_LDFLAGS"
-export SOURCE_DATE_EPOCH=1721140344
+export SOURCE_DATE_EPOCH=1721240758
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/igsc
 cp %{_builddir}/igsc-%{version}/LICENSE.txt %{buildroot}/usr/share/package-licenses/igsc/a8f3e29d5eab4420318de979754f5637d4bf2c3f || :
@@ -177,9 +177,9 @@ popd
 
 %files lib
 %defattr(-,root,root,-)
-/V3/usr/lib64/libigsc.so.0.8.18
+/V3/usr/lib64/libigsc.so.0.8.19
 /usr/lib64/libigsc.so.0
-/usr/lib64/libigsc.so.0.8.18
+/usr/lib64/libigsc.so.0.8.19
 
 %files license
 %defattr(0644,root,root,0755)
