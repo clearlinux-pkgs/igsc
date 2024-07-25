@@ -7,7 +7,7 @@
 #
 Name     : igsc
 Version  : 0.9.2
-Release  : 21
+Release  : 22
 URL      : https://github.com/intel/igsc/archive/V0.9.2/igsc-0.9.2.tar.gz
 Source0  : https://github.com/intel/igsc/archive/V0.9.2/igsc-0.9.2.tar.gz
 Summary  : No detailed summary available
