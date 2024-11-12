@@ -76,6 +76,7 @@ libigsc.so.0:igsc_image_oprom_version
 libigsc.so.0:igsc_memory_ppr_devices
 libigsc.so.0:igsc_memory_ppr_status
 libigsc.so.0:igsc_oprom_version_compare
+libigsc.so.0:igsc_read_fw_status_reg
 libigsc.so.0:igsc_set_log_callback_func
 libigsc.so.0:igsc_set_log_level
 libigsc.so.0:igsc_translate_firmware_status
